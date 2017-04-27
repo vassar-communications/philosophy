@@ -1,0 +1,234 @@
+@media screen {
+
+  body {
+    padding: 0 5% 5%;
+    position: relative;
+    text-align: left; 
+  }
+
+  p img {
+    float: left;
+    margin: 0 .5em .5em 0;
+    padding: 0; 
+  }
+
+  html {
+    text-align: center; 
+  }
+
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+  }
+
+  .ac-NavAnchor--menu {
+    padding: 0;
+    border-bottom: none;
+    font-size: 1.8em;
+    text-align: center; 
+  }
+
+  .ac-NavAnchor--top,
+  .u-Masthead__siteName--link {
+    border-bottom: none; 
+  }
+
+  .ac-NavAnchor--menu {
+    left: 0;
+    /* override responsive */
+    position: relative;
+    /* override responsive */
+    top: .5em;
+    z-index: 1; 
+  }
+
+  .u-lHeader {
+    margin-top: -2.1em;
+    margin-left: -5%;
+    overflow: hidden;
+    padding: 7.43em 0 1.5% 5%;
+    position: relative;
+    width: 110%; }
+
+  .u-lMain {
+    margin: 10% 0 3.375% 0; }
+
+  .u-lFooter {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+    text-align: center;
+    overflow: hidden;
+    zoom: 1; 
+  }
+
+  .figure {
+    margin: .833em
+  } 
+
+  .figure-left-half,
+  .figure-right-half {
+    width: 100%;
+    margin: .833em 0;
+  }
+  
+   /* Figures and figcaption
+   ====================== */
+
+  .u-pageHome .u-Gallery__modalThumbnail,
+  .home .u-Gallery__modalThumbnail {
+    margin: 0 0 1.4em;
+  }
+
+  .u-Figure__image {
+    padding: 0;
+  }
+
+  .u-Figure,
+  .figure {
+    margin: 0 5% 5% 5%;
+    /* >= 5% as default  */
+  }
+
+  .u-Figure--left,
+  .figure-left {
+    float: left;
+    margin: 2.5% 5% 5% 0;
+  }
+
+  .u-lContent__studentPubs {
+      margin: 1.728em 0;
+  }
+
+  .u-lContent__studentPubs .u-Figure--left,
+  .u-lContent__studentPubs .figure-left {
+      margin: 0 5% 5% 0;
+      width: 25%;
+  }
+
+  .u-lContent__studentPubs .u-lContent__studentPubs--list {
+    float: right;
+    margin: 0;
+    padding: 0 0 0 1em;
+    width: 69%
+  }
+
+  .u-Figure--right {
+    float: right;
+    margin: 2.5% 0 5% 5%;
+  }
+
+  .u-Figure__caption {
+    margin-top: .44em;
+    font-size: .8em;
+    /* optional value */
+  }
+
+  .u-Figure__caption--link {
+    display: block;
+    margin-top: .2em;
+    border-bottom: 0px;
+  }
+
+  /* 'image-full' in WYSIWYG pull-down menu.
+  No width specified, handled responsively */
+
+  .u-Figure--full {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-Figure--center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    /* optional value */
+  }
+
+  .u-Figure--half {
+    width: 45%;
+    /* optional value */
+  }
+
+  .u-Figure--third {
+    width: 28%;
+    /* optional value */
+  }
+
+  .u-Figure--quarter {
+    width: 20%;
+    /* optional value */
+  } 
+
+  .u-lContent img,
+  .u-lAside img {
+    max-width: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 40em) {
+
+  body {
+    width: 90%;
+    margin: 5%; 
+    padding: 0;
+  }
+
+  html {
+    margin: 0; 
+  }
+
+  .ac-NavAnchor {
+    display: none; 
+  }
+
+  .u-lAside {
+    float: right;
+    width: 30%;
+    padding-left: 2.5%;
+    padding-right: 5%; 
+  }
+
+  .u-lContent {
+    float: left;
+    padding: 0 2.5%;
+    width: 69%; 
+  }
+
+  .u-lHeader {
+    padding-left: 0;
+    margin: 0;
+    padding: 4.3em 5% .694em;
+    width: 100%; 
+  }
+
+  .u-lMain {
+    float: right;
+    width: 75%;
+    margin: 4% 0 3.375% 0; 
+  }
+
+  .u-NavSite {
+    float: left;
+    margin: 4% 0 0;
+    padding: 0 2.5% 1.5% 5%;
+    width: 24%;
+    text-align: left; 
+  }
+
+}
+
+@media screen and (min-width: 70em) {
+
+  html {
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto; 
+  } 
+
+}

@@ -1,0 +1,206 @@
+/* ========================================================================
+ Color
+ ======================================================================== */
+
+a,
+.ac-NavAnchor--top {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors($darkDarkBlue, $medBlue, $medBlue, $darkDarkBlue, $medBlue);
+  border-bottom: 1px dotted;
+  transition: all .23s ease-in-out;
+}
+
+.u-NavSite__item,
+.u-NewsList__item,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1, h2, h3, h4, h5, h6 {
+	border-bottom: none;
+}
+
+html {
+	background-color: $lightLightGreen;
+	color: $darkDarkBlue;
+  position: relative;
+}
+
+body {
+  background-color: #fff;
+  border: 1px solid;
+}
+
+h1, h2, h3, h4, h5, h6, caption {
+  color: $darkBlue; 
+}
+
+table {
+  border-top: 1px solid $ltBlue;
+  border-left: 1px solid $ltBlue; }
+
+td,
+th {
+  border-right: 1px solid $ltBlue;
+  border-bottom: 1px solid $ltBlue; }
+
+th {
+  background: $lightLightGreen; }
+
+.u-lContent__studentPubs img {
+   border: 1px solid $ltBlue;
+}
+
+.u-lContent__studentPubs a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.u-Masthead__siteName--link,
+.u-Masthead__vassar--link {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors(#fff, $medBlue, $medBlue, #fff, $medBlue);
+}
+
+.ac-skipLink,
+.ac-skipLink:visitied {
+  color: $medBlue; 
+}
+
+#search {
+  background-color: $medBlue;
+}
+
+.ac-NavAnchor--menu,
+.u-Search__button,
+.u-Search__submit,
+.u-Search__cancel {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors(white, white, white, white, white);
+}
+
+.u-Search__field {
+  background-color: #fff;
+  border: none;
+}
+
+.u-Search__submit {
+  background-color: transparent;
+}
+
+.u-lHeader {
+  background: $darkBlue;
+}
+
+.u-lFooter {
+  border-top: 1px solid $ltBlue;
+}
+
+.u-NavSite__item {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors($darkBlue, $medBlue, $medBlue, $darkBlue, $medBlue);
+  background: $ltBlue;
+}
+
+.u-NavSite__item--isOpen .u-NavSite__item {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors($medBlue, $darkBlue, $darkBlue, $medBlue, $darkBlue);
+  background: transparent;
+}
+
+.u-NavSite__item--isCurrent {
+  @include link-colors($darkDarkBlue, $medBlue, $medBlue, $darkDarkBlue, $medBlue);
+}
+
+.u-lAside .u-NewsList__itemContainer {
+    background: tint($ltBlue, 70%);
+}
+
+.u-ArticleListItem--expired {
+  background: transparent;
+}
+
+.u-lAside h3 { 
+	position: relative;
+	a:before {
+		position: absolute;
+		content: "";
+		right: -.694em;
+		bottom: 0.3em;
+		width: 0;
+		height: 0;
+		border-top: .382em solid transparent;
+		border-bottom: .382em solid transparent;
+		border-left: 0.482em solid #84a4c3;
+	}
+}
+
+@media screen and (min-width: 40em) {
+
+  #search {
+    border-bottom: 1px solid #fff;
+  }
+
+  .u-lHeader {
+    border-top: none;
+  }
+
+  .u-Search__submit {
+    /*link-colors($normal, $hover, $active, $visited, $focus)*/
+    @include link-colors(white, $darkBlue, $darkBlue, white, $darkBlue);
+  }
+
+  .u-Search__submit {
+    background-color: $darkBlue;
+  }
+
+  .u-Search__submit:hover,
+  .u-Search__submit:active,
+  .u-Search__submit:focus, {
+    background-color: $lightLightGreen;
+  }
+
+  .u-Search__field {
+    background-color: $darkBlue;
+  }
+
+  .u-Search__field:active,
+  .u-Search__field:focus, {
+    background-color: $lightLightGreen;
+  }
+
+	.u-lAside {
+	    border-left: 1px solid $ltBlue;
+	}
+
+	.u-NavSite {
+	    border-right: 1px solid $ltBlue;
+	}
+
+  .u-NavSite__item {
+    /*link-colors($normal, $hover, $active, $visited, $focus)*/
+    @include link-colors($darkDarkBlue, $medBlue, $medBlue, $darkDarkBlue, $medBlue);
+    background: transparent;
+    position: relative;
+  }
+
+  .u-NavSite__item--isOpen .u-NavSite__item {
+    /*link-colors($normal, $hover, $active, $visited, $focus)*/
+    @include link-colors($medBlue, $darkBlue, $darkBlue, $medBlue, $darkBlue);
+  }
+
+  .u-NavSite__item--isCurrent {
+    @include link-colors($darkDarkBlue, $medBlue, $medBlue, $darkDarkBlue, $medBlue);
+  }
+
+  .u-NavSite__item--isCurrent:before {
+    position: absolute;
+    content: "";
+    left: -.694em;
+    top: .833em;
+    width: 0; 
+    height: 0; 
+    border-top: .482em solid transparent;
+    border-bottom: .482em solid transparent;
+    border-left: .482em solid $medBlue;
+  }
+
+
+
+}
