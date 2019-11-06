@@ -27,6 +27,18 @@ body {
   border: 1px solid;
 }
 
+.gf- body
+{
+  background-color: transparent;
+  border: 0;
+}
+
+.gf- .PageContent
+{
+    background-color: #fff;
+    border: 1px solid;
+}
+
 h1, h2, h3, h4, h5, h6, caption {
   color: $darkBlue; 
 }
